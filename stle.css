@@ -1,17 +1,24 @@
 body {
+    background-color: black;
+    color: white;
     text-align: center;
-    background-color: #fff0f5;
     font-family: Arial, sans-serif;
 }
 
+/* Main heading */
 h1 {
-    color: #ff1493;
+    font-size: 48px;
+    color: #ff4d6d;
 }
 
+/* Sub headings */
 h2 {
-    color: #ff69b4;
+    font-size: 32px;
+    color: #ff9aa2;
 }
 
+/* Paragraph text */
 p {
-    font-size: 18px;
+    font-size: 24px;
+    margin: 10px 0;
 }
