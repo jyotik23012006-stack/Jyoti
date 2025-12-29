@@ -80,3 +80,11 @@ button:hover {
 }
 
 
+img {
+  width: 300px;        /* change size if you want */
+  max-width: 90%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px hotpink;
+}
