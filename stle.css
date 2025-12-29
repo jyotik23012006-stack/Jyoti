@@ -5,20 +5,36 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Main heading */
-h1 {
-    font-size: 48px;
-    color: #ff4d6d;
+/* Rainbow glowing text */
+.rainbow-glow {
+    font-size: 60px;
+    font-weight: bold;
+    animation: rainbow 3s infinite linear;
+    text-shadow:
+        0 0 10px red,
+        0 0 20px orange,
+        0 0 30px yellow,
+        0 0 40px green,
+        0 0 50px cyan,
+        0 0 60px blue,
+        0 0 70px violet;
 }
 
-/* Sub headings */
+@keyframes rainbow {
+    0% { color: red; }
+    14% { color: orange; }
+    28% { color: yellow; }
+    42% { color: green; }
+    57% { color: cyan; }
+    71% { color: blue; }
+    85% { color: violet; }
+    100% { color: red; }
+}
+
 h2 {
     font-size: 32px;
-    color: #ff9aa2;
 }
 
-/* Paragraph text */
 p {
     font-size: 24px;
-    margin: 10px 0;
 }
