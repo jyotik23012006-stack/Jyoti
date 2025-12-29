@@ -1,3 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smile Page 💕</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            width: 250px;
+            border-radius: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>😊 This page is only for you</h1>
+    <p>Keep smiling always 💖</p>
+
+    <!-- IMAGE -->
+    <img src="your-image-name.jpg" alt="Smile">
+
+    <script>
+        // ❌ Block direct access
+        if (sessionStorage.getItem("smile_access") !== "granted") {
+            window.location.href = "index.html";
+        }
+
+        // 🔄 On refresh → go home
+        if (performance.navigation.type === 1) {
+            sessionStorage.removeItem("smile_access");
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+</html>
+
 
 
 
