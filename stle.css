@@ -1,6 +1,5 @@
 body {
     background-color: black;
-    color: white;
     text-align: center;
     font-family: Arial, sans-serif;
 }
@@ -9,7 +8,7 @@ body {
 .rainbow-glow {
     font-size: 60px;
     font-weight: bold;
-    animation: rainbow 3s infinite linear;
+    animation: rainbow 3s linear infinite;
     text-shadow:
         0 0 10px red,
         0 0 20px orange,
@@ -29,12 +28,4 @@ body {
     71% { color: blue; }
     85% { color: violet; }
     100% { color: red; }
-}
-
-h2 {
-    font-size: 32px;
-}
-
-p {
-    font-size: 24px;
 }
