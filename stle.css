@@ -59,4 +59,17 @@ p, h2 {
     font-size: clamp(16px, 4.5vw, 24px);
     line-height: 1.6;
 }
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    background: pink;
+    cursor: pointer;
+}
+
+button:hover {
+    background: hotpink;
+}
+
 
