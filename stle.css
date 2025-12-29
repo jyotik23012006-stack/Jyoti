@@ -1,46 +1,49 @@
 body {
     background-color: black;
+    color: white;
     text-align: center;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
     font-family: Arial, sans-serif;
 }
-
-/* Rainbow glowing text */
-.rainbow-glow {
-    font-size: 60px;
-    font-weight: bold;
-    animation: rainbow 3s linear infinite;
-    text-shadow:
-        0 0 10px red,
-        0 0 20px orange,
-        0 0 30px yellow,
-        0 0 40px green,
-        0 0 50px cyan,
-        0 0 60px blue,
-        0 0 70px violet;
+h1 {
+    font-size: clamp(32px, 8vw, 60px);
+    background: linear-gradient(
+        90deg,
+        red,
+        orange,
+        yellow,
+        green,
+        cyan,
+        blue,
+        violet,
+        red
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rainbow 4s linear infinite;
+    text-shadow: 0 0 15px rgba(255,255,255,0.6);
 }
 
 @keyframes rainbow {
-    0% { color: red; }
-    14% { color: orange; }
-    28% { color: yellow; }
-    42% { color: green; }
-    57% { color: cyan; }
-    71% { color: blue; }
-    85% { color: violet; }
-    100% { color: red; }
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
 }
 .hearts span {
     position: fixed;
-    bottom: -50px;
-    font-size: 30px;
-    animation: floatUp 6s linear infinite;
+    bottom: -40px;
+    font-size: 22px;
+    animation: floatUp 7s linear infinite;
+    pointer-events: none;
 }
 
 .hearts span:nth-child(1) { left: 10%; animation-delay: 0s; }
-.hearts span:nth-child(2) { left: 30%; animation-delay: 1s; }
-.hearts span:nth-child(3) { left: 50%; animation-delay: 2s; }
-.hearts span:nth-child(4) { left: 70%; animation-delay: 3s; }
-.hearts span:nth-child(5) { left: 90%; animation-delay: 4s; }
+.hearts span:nth-child(2) { left: 30%; animation-delay: 1.5s; }
+.hearts span:nth-child(3) { left: 50%; animation-delay: 3s; }
+.hearts span:nth-child(4) { left: 70%; animation-delay: 4.5s; }
+.hearts span:nth-child(5) { left: 90%; animation-delay: 6s; }
 
 @keyframes floatUp {
     0% {
@@ -48,7 +51,12 @@ body {
         opacity: 1;
     }
     100% {
-        transform: translateY(-110vh);
+        transform: translateY(-120vh);
         opacity: 0;
     }
 }
+p, h2 {
+    font-size: clamp(16px, 4.5vw, 24px);
+    line-height: 1.6;
+}
+
