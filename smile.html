@@ -25,21 +25,9 @@
     <!-- IMAGE -->
     <img src="your-image-name.jpg" alt="Smile">
 
-    <script>
-        // ❌ Block direct access
-        if (sessionStorage.getItem("smile_access") !== "granted") {
-            window.location.href = "index.html";
-        }
-
-        // 🔄 On refresh → go home
-        if (performance.navigation.type === 1) {
-            sessionStorage.removeItem("smile_access");
-            window.location.href = "index.html";
-        }
-    </script>
-
 </body>
 </html>
+
 
 
 
