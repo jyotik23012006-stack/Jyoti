@@ -36,10 +36,15 @@
     
     
 <script>
+<script>
 function openSmile() {
     let password = prompt("Enter password for H△rsH");
 
-    if (password === "i like triangle more than a") {
+    if (!password) return; // if user cancels
+
+    password = password.trim(); // 🔥 IMPORTANT FIX
+
+    if (password === "iliketrianglemorethana") {
         window.location.href = "smile.html";
     } else {
         alert("Wrong password ❌");
@@ -49,12 +54,17 @@ function openSmile() {
 function openakankcha() {
     let password = prompt("Enter password for akankcha");
 
-    if (password === "i love jyoti") {
+    if (!password) return;
+
+    password = password.trim(); // 🔥 IMPORTANT FIX
+
+    if (password === "ilovejyoti") {
         window.location.href = "akankcha.html";
     } else {
         alert("Wrong password ❌");
     }
 }
+</script>
 
 </script>
 
