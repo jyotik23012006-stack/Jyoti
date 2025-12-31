@@ -7,9 +7,7 @@
 
 <body>
     <h1>Hello :)</h1>
-   <h1 class="rainbow-glow">HAPPY NEW YEAR ❤️</h1>
-
-
+    <h1 class="rainbow-glow">HAPPY NEW YEAR ❤️</h1>
 
     <h2>Wishing you a very happy</h2>
     <h2>and smiling year</h2>
@@ -24,50 +22,45 @@
     <p>— From Jyoti 💖</p>
     
     <div class="hearts">
-  <span>❤️</span>
-  <span>💖</span>
-  <span>💕</span>
-  <span>💗</span>
-  <span>💘</span>
-</div>
+        <span>❤️</span>
+        <span>💖</span>
+        <span>💕</span>
+        <span>💗</span>
+        <span>💘</span>
+    </div>
+
+    <!-- ✅ BUTTONS (NOT inside <p>) -->
     <button onclick="openSmile()">H△rsH 💕</button>
-    
-    <p> <button onclick="openakankcha()">akankcha💕</button> 
-    
-    
-<script>
-<script>
-function openSmile() {
-    let password = prompt("Enter password for H△rsH");
+    <br><br>
+    <button onclick="openakankcha()">akankcha 💕</button>
 
-    if (!password) return; // if user cancels
+    <!-- ✅ SCRIPT AT BOTTOM -->
+    <script>
+        function openSmile() {
+            let password = prompt("Enter password for H△rsH");
+            if (!password) return;
 
-    password = password.trim(); // 🔥 IMPORTANT FIX
+            password = password.trim();
 
-    if (password === "i like triangle more than a") {
-        window.location.href = "smile.html";
-    } else {
-        alert("Wrong password ❌");
-    }
-}
-    
-function openakankcha() {
-    let password = prompt("Enter password for akankcha");
+            if (password === "i like triangle more than a") {
+                window.location.href = "smile.html";
+            } else {
+                alert("Wrong password ❌");
+            }
+        }
 
-    if (!password) return;
+        function openakankcha() {
+            let password = prompt("Enter password for akankcha");
+            if (!password) return;
 
-    password = password.trim(); // 🔥 IMPORTANT FIX
+            password = password.trim();
 
-    if (password === "i love jyoti") {
-        window.location.href = "akankcha.html";
-    } else {
-        alert("Wrong password ❌");
-    }
-}
-</script>
-
-</script>
-
-
+            if (password === "i love jyoti") {
+                window.location.href = "akankcha.html";
+            } else {
+                alert("Wrong password ❌");
+            }
+        }
+    </script>
 </body>
 </html>
