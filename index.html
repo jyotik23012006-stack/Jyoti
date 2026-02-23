@@ -46,6 +46,145 @@
     <br><br>
 
     <!-- ✅ SCRIPT AT BOTTOM -->
+    <script>
+
+  /* ------------ Morning.java ------------ */
+  function openMorning() {
+    alert("Good morning ❤️🌸");
+  }
+
+  /* ------------ AgeGroup.java ------------ */
+  function openAgeGroup() {
+    let age = Number(prompt("Enter your age:"));
+    if (age < 0 || isNaN(age)) alert("Invalid age");
+    else if (age < 18) alert("You are a minor 😊");
+    else if (age < 60) alert("You are an adult 👍");
+    else alert("You are a senior citizen 💛");
+  }
+
+  /* ------------ ArithmeticOperators.java ------------ */
+  function openArithmeticOperators() {
+    let a = Number(prompt("Enter first number:"));
+    let b = Number(prompt("Enter second number:"));
+    alert(
+      "Addition = " + (a + b) +
+      "\nSubtraction = " + (a - b) +
+      "\nMultiplication = " + (a * b) +
+      "\nDivision = " + (a / b)
+    );
+  }
+
+  /* ------------ CalculateGrade.java ------------ */
+  function openCalculateGrade() {
+    let marks = Number(prompt("Enter marks out of 100:"));
+    if (marks >= 90) alert("Grade: A");
+    else if (marks >= 75) alert("Grade: B");
+    else if (marks >= 60) alert("Grade: C");
+    else if (marks >= 40) alert("Grade: D");
+    else alert("Grade: Fail ❌");
+  }
+
+  /* ------------ CompoundInterest.java ------------ */
+  function openCompoundInterest() {
+    let p = Number(prompt("Principal:"));
+    let r = Number(prompt("Rate:"));
+    let t = Number(prompt("Time (years):"));
+    let amount = p * Math.pow((1 + r/100), t);
+    alert("Compound Interest = " + (amount - p));
+  }
+
+  /* ------------ DetermineSignNumber.java ------------ */
+  function openDetermineSignNumber() {
+    let n = Number(prompt("Enter number:"));
+    if (n > 0) alert("Positive");
+    else if (n < 0) alert("Negative");
+    else alert("Zero");
+  }
+
+  /* ------------ FahrenheitToCelsius.java ------------ */
+  function openFahrenheitTOcelcius() {
+    let f = Number(prompt("Enter Fahrenheit:"));
+    let c = (f - 32) * 5/9;
+    alert("Celsius = " + c.toFixed(2));
+  }
+
+  /* ------------ FindLeapYear.java ------------ */
+  function openFindLeapYear() {
+    let y = Number(prompt("Enter year:"));
+    if ((y % 4 === 0 && y % 100 !== 0) || y % 400 === 0)
+      alert("Leap year ✔");
+    else
+      alert("Not a leap year ❌");
+  }
+
+  /* ------------ FloatingNumbers.java ------------ */
+  function openFloatingNumbers() {
+    let num = Number(prompt("Enter a floating number:"));
+    alert("You entered: " + num);
+  }
+
+  /* ------------ GreatestNumber.java ------------ */
+  function openGreatestNumber() {
+    let a = Number(prompt("Enter number 1:"));
+    let b = Number(prompt("Enter number 2:"));
+    let c = Number(prompt("Enter number 3:"));
+    alert("Greatest = " + Math.max(a, b, c));
+  }
+
+  /* ------------ OddOrEven.java ------------ */
+  function openOddOrEven() {
+    let n = Number(prompt("Enter number:"));
+    alert(n % 2 === 0 ? "Even" : "Odd");
+  }
+
+  /* ------------ SimpleInterest.java ------------ */
+  function openSimpleInterest() {
+    let p = Number(prompt("Principal:"));
+    let r = Number(prompt("Rate:"));
+    let t = Number(prompt("Time in years:"));
+    alert("Simple Interest = " + (p * r * t) / 100);
+  }
+
+  /* ------------ escape_pyramid.java ------------ */
+  function openescape_pyramid() {
+    let rows = Number(prompt("Enter number of rows:"));
+    let pattern = "";
+    for (let i = 1; i <= rows; i++) {
+      pattern += " ".repeat(rows - i) + "* ".repeat(i) + "\n";
+    }
+    alert(pattern);
+  }
+
+  /* ------------ perimeterRectangle.java ------------ */
+  function openperimeterRectangle() {
+    let l = Number(prompt("Enter length:"));
+    let w = Number(prompt("Enter width:"));
+    alert("Perimeter = " + 2 * (l + w));
+  }
+
+  /* ------------ sum.java ------------ */
+  function opensum() {
+    let a = Number(prompt("Enter number 1:"));
+    let b = Number(prompt("Enter number 2:"));
+    alert("Sum = " + (a + b));
+  }
+
+  /* ------------ swap.java ------------ */
+  function openswap() {
+    let a = Number(prompt("Enter a:"));
+    let b = Number(prompt("Enter b:"));
+    alert("Before swap: a=" + a + ", b=" + b);
+    let temp = a; a = b; b = temp;
+    alert("After swap: a=" + a + ", b=" + b);
+  }
+
+  /* ------------ welcomeinput.java ------------ */
+  function openwelcomeinput() {
+    let name = prompt("Enter your name:");
+    alert("Welcome, " + name + "! ❤️");
+  }
+
+</script>
 
 </body>
 </html>
